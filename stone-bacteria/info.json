@@ -1,8 +1,8 @@
 {
   "name": "stone-bacteria",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Stone Bacteria",
-  "description": "Adds stone bacteria and cultivation recipes for biochambers on Gleba.",
+  "description": "Adds stone bacteria and cultivation recipes for biochambers on Gleba. Stromatolites also give a small amount of stone bacteria. This mod is totally balanced and lore friendly.",
   "author": "Faerus",
   "factorio_version": "2.1",
   "dependencies": [

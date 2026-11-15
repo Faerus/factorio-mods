@@ -118,3 +118,40 @@ data.raw["recipe"]["stone-bacteria-cultivation"].subgroup = subgroup
 local copper_order = data.raw["recipe"]["copper-bacteria-cultivation"].order
 data.raw["recipe"]["stone-bacteria"].order = copper_order .. "-a"
 data.raw["recipe"]["stone-bacteria-cultivation"].order = copper_order .. "-b"
+
+
+--
+-- Change stromatolite minable results to include stone bacteria
+--
+
+local function modify_stromatolite(name)
+
+    local stromatolite = data.raw["simple-entity"][name]
+
+    if not stromatolite then
+        error("Stromatolite not found: " .. name)
+    end
+
+    local products = stromatolite.minable.results
+
+    -- Reduce stone production
+    for _, product in pairs(products) do
+        if product.name == "stone" then
+            product.amount_min = 1
+            product.amount_max = 3
+            product.amount = nil
+        end
+    end
+
+    -- Add stone bacteria
+    table.insert(products, {
+        type = "item",
+        name = "stone-bacteria",
+        amount_min = 1,
+        amount_max = 2
+    })
+
+end
+
+modify_stromatolite("iron-stromatolite")
+modify_stromatolite("copper-stromatolite")
