@@ -1,0 +1,12 @@
+{
+  "name": "stone-bacteria",
+  "version": "1.0.0",
+  "title": "Stone Bacteria",
+  "description": "Adds stone bacteria and cultivation recipes for biochambers on Gleba.",
+  "author": "Faerus",
+  "factorio_version": "2.1",
+  "dependencies": [
+    "base >= 2.0.0",
+    "space-age"
+  ]
+}
