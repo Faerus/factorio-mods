@@ -3,7 +3,7 @@ Available mods:
 1. [Stone Bacteria](#stone-bacteria)
 
 ## Stone Bacteria
-#### Grow stone instead of mining it!
+_**Grow stone instead of mining it!**_
 
 **Stone Bacteria** expands Gleba's biological production system with a renewable source of stone, just like iron and copper bacteria.
 
